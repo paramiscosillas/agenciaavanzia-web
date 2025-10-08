@@ -1,99 +1,140 @@
-/* Reset de márgenes y rellenos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avanzia - Transformación Digital con IA</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f5f5f5;color:#111;}
 
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/* Buttons */
+.btn{display:inline-block;padding:12px 30px;border-radius:30px;font-weight:bold;text-decoration:none;transition:all 0.3s;}
+.btn-primary{background:linear-gradient(45deg,#ff3c78,#ff9a3c);color:#fff;}
+.btn-primary:hover{opacity:0.9;transform:translateY(-3px);}
+.btn-outline{background:#fff;color:#ff3c78;border:2px solid #ff3c78;}
+.btn-outline:hover{background:#ff3c78;color:#fff;}
 
-/* Encabezado */
-header {
-    background: linear-gradient(135deg, #ff3c78, #ff9a3c);
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
+/* Hero */
+header{padding:100px 20px;text-align:center;background:linear-gradient(to bottom right,#e0f7ff,#ffffff);}
+header h1{font-size:3rem;margin-bottom:20px;}
+header h1 span{background:linear-gradient(45deg,#ff3c78,#ff9a3c);-webkit-background-clip:text;color:transparent;}
+header p{font-size:1.2rem;margin-bottom:20px;}
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
+/* Sections */
+section{padding:60px 20px;}
+h2{text-align:center;font-size:2.5rem;margin-bottom:30px;}
+p.text-center{max-width:700px;margin:0 auto;margin-bottom:30px;font-size:1.1rem;color:#555;}
 
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
+/* Services */
+.services{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.card{background:#fff;border-radius:15px;box-shadow:0 10px 20px rgba(0,0,0,0.1);padding:25px;width:280px;text-align:center;transition:all 0.3s;}
+.card:hover{transform:translateY(-10px);box-shadow:0 15px 30px rgba(0,0,0,0.2);}
+.card img{width:60px;margin-bottom:15px;}
+.card h3{font-size:1.4rem;margin-bottom:10px;}
+.card p{color:#555;margin-bottom:10px;}
+.card a{display:inline-block;color:#ff3c78;text-decoration:none;font-weight:bold;transition:all 0.3s;}
+.card a:hover{color:#ff9a3c;transform:translateX(3px);}
 
-header .btn-primary {
-    background-color: white;
-    color: #ff3c78;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
+/* Benefits */
+.benefits{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.benefit{background:#fff;padding:20px;border-radius:15px;text-align:center;flex:1 1 200px;transition:all 0.3s;}
+.benefit:hover{background:#ff3c7820;}
 
-header .btn-primary:hover {
-    background-color: #ff9a3c;
-    color: white;
-}
+/* Testimonials */
+.testimonials{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.testimonial{background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);flex:1 1 300px;}
 
-/* Sección de servicios */
-.services {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-    flex-wrap: wrap;
-}
+/* Footer */
+footer{background:#111;color:#fff;text-align:center;padding:20px;}
+footer a{color:#ff3c78;text-decoration:none;}
+@media(max-width:768px){header h1{font-size:2rem;} .card{width:90%;}}
+</style>
+</head>
+<body>
 
-.service-card {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    transition: transform 0.3s;
-}
+<!-- Hero -->
+<header>
+  <div>
+    <h1>Impulsamos tu negocio con <span>inteligencia artificial</span></h1>
+    <p>Transformamos tu presencia digital, optimizamos tus procesos y llevamos tus resultados al siguiente nivel.</p>
+    <p>Tu negocio tiene potencial — nosotros usamos IA para hacerlo crecer más rápido, de forma inteligente.</p>
+    <div style="margin-top:20px;">
+      <a href="#servicios" class="btn btn-primary">Descubrí cómo</a>
+      <a href="#contacto" class="btn btn-outline">Consulta Gratuita</a>
+    </div>
+  </div>
+</header>
 
-.service-card:hover {
-    transform: translateY(-10px);
-}
+<!-- About -->
+<section>
+  <h2>🚀 Quiénes somos</h2>
+  <p class="text-center">Somos Avanzia, una agencia digital que combina estrategia, creatividad y tecnología para hacer que tu negocio destaque. Nos apasiona ayudar a emprendedores y pymes a aprovechar el poder de la inteligencia artificial para vender más, automatizar tareas y tomar decisiones más inteligentes.</p>
+  <p class="text-center"><strong>Creemos que el futuro no es para los más grandes, sino para los más ágiles y preparados.</strong></p>
+</section>
 
-.service-card img {
-    width: 80px;
-    margin-bottom: 15px;
-}
+<!-- Services -->
+<section id="servicios">
+  <h2>💡 Lo que hacemos</h2>
+  <p class="text-center">En Avanzia, conectamos datos, automatización y marketing digital para crear estrategias que realmente funcionan</p>
+  <div class="services">
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="Estrategia Digital con IA">
+      <h3>Estrategia Digital con IA</h3>
+      <p>Diseñamos planes inteligentes adaptados a tus objetivos, con decisiones basadas en datos, no en suposiciones.</p>
+      <a href="https://avanzia-ai-auditoria.lovable.app/" target="_blank">Ver más →</a>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/000000/google-ads.png" alt="Optimización de Anuncios con IA">
+      <h3>Optimización de Anuncios con IA</h3>
+      <p>Mejoramos tus campañas publicitarias con algoritmos que aprenden solos, para lograr más resultados con menos inversión.</p>
+      <a href="https://avanzia-ads-ai.lovable.app/" target="_blank">Ver más →</a>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/000000/small-business.png" alt="Transformación Digital Express">
+      <h3>Transformación Digital Express para Pymes</h3>
+      <p>Digitalizamos y modernizamos tu negocio en tiempo récord, con herramientas potentes y fáciles de usar.</p>
+      <a href="https://avanza-pymes-express.lovable.app/" target="_blank">Ver más →</a>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/000000/rocket.png" alt="Automatización de Procesos">
+      <h3>Automatización de Procesos</h3>
+      <p>Automatizamos tareas repetitivas para que ganes tiempo, eficiencia y tranquilidad.</p>
+      <a href="https://avanza-ia-boost.lovable.app/" target="_blank">Ver más →</a>
+    </div>
+  </div>
+</section>
 
-.service-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+<!-- Benefits -->
+<section class="benefits">
+  <h2>🌟 Por qué elegirnos</h2>
+  <div class="benefits">
+    <div class="benefit"><img src="https://img.icons8.com/color/48/000000/idea.png" /><p>Innovamos en cada proyecto</p></div>
+    <div class="benefit"><img src="https://img.icons8.com/color/48/000000/customer-support.png" /><p>Te acompañamos de forma cercana y humana</p></div>
+    <div class="benefit"><img src="https://img.icons8.com/color/48/000000/combo-chart.png" /><p>Medimos todo lo que hacemos</p></div>
+    <div class="benefit"><img src="https://img.icons8.com/color/48/000000/group.png" /><p>Combinamos creatividad con tecnología</p></div>
+  </div>
+</section>
 
-.service-card a {
-    color: #ff3c78;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>💬 Lo que dicen de nosotros</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"Gracias a AvanzIA, nuestras campañas empezaron a generar clientes de forma automatizada. En un mes, duplicamos resultados."</p>
+      <p><strong>Laura M.</strong> - Dueña de una tienda online</p>
+    </div>
+    <div class="testimonial">
+      <p>"La automatización nos ahorró horas cada semana. Ahora podemos centrarnos en lo importante: hacer crecer el negocio."</p>
+      <p><strong>Carlos G.</strong> - Agencia inmobiliaria</p>
+    </div>
+  </div>
+</section>
 
-.service-card a:hover {
-    color: #ff9a3c;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+<!-- CTA -->
+<section id="contacto" style="text-align:center;padding:60px 20px;background:linear-gradient(to bottom right,#e0f7ff,#ffffff);">
+  <h2>🔥 ¿Listo para llevar tu negocio al siguiente nivel?</h2>
+  <p>
 
