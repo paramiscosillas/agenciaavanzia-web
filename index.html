@@ -1,102 +1,99 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avanzia - Transformación Digital con IA</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
-  body { background:#f5f5f5; color:#111; }
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  header {
-    text-align: center;
-    padding: 100px 20px;
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
     background: linear-gradient(135deg, #ff3c78, #ff9a3c);
-    color: #fff;
-    border-radius: 0 0 50px 50px;
-  }
-  header h1 { font-size:3rem; margin-bottom:20px; }
-  header p { font-size:1.3rem; margin-bottom:40px; }
-  .btn-primary {
-    display:inline-block;
-    padding:15px 35px;
-    background:#fff;
-    color:#ff3c78;
-    font-weight:bold;
-    border-radius:50px;
-    text-decoration:none;
-    transition: all 0.3s ease;
-  }
-  .btn-primary:hover { background:#ff3c78; color:#fff; transform:translateY(-3px); }
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
 
-  .services {
-    display:flex; flex-wrap:wrap; justify-content:center; gap:25px;
-    padding:60px 20px;
-  }
-  .service-card {
-    background:#fff;
-    border-radius:20px; padding:35px 25px;
-    width:260px; text-align:center; color:#111;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.4s, box-shadow 0.4s;
-  }
-  .service-card:hover { transform:translateY(-10px); box-shadow:0 15px 35px rgba(0,0,0,0.2); }
-  .service-card img { width:60px; margin-bottom:15px; }
-  .service-card h2 { font-size:1.4rem; margin-bottom:15px; }
-  .service-card a {
-    display:inline-block; margin-top:10px; padding:12px 25px;
-    background: linear-gradient(45deg, #ff3c78, #ff9a3c);
-    color:#fff; border-radius:30px; font-weight:bold;
-    transition: all 0.3s ease; text-decoration:none;
-  }
-  .service-card a:hover { transform: translateY(-3px); opacity:0.9; }
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 
-  footer { background:#111; color:#fff; text-align:center; padding:20px 10px; font-size:14px; }
-  footer a { color:#ff3c78; margin:0 10px; text-decoration:none; }
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
 
-  @media(max-width:600px) {
-    .services { flex-direction:column; align-items:center; }
-    header h1 { font-size:2.2rem; }
-    header p { font-size:1.1rem; }
-  }
-</style>
-</head>
-<body>
+header .btn-primary {
+    background-color: white;
+    color: #ff3c78;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
 
-<header>
-  <h1>Bienvenido a Avanzia</h1>
-  <p>Transformamos tu negocio con Inteligencia Artificial y marketing digital</p>
-  <a href="#services" class="btn-primary">Ver nuestros servicios</a>
-</header>
+header .btn-primary:hover {
+    background-color: #ff9a3c;
+    color: white;
+}
 
-<section id="services" class="services">
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="AI Audit">
-    <h2>AI Audit</h2>
-    <a href="/ai-audit">Ver más</a>
-  </div>
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/000000/google-ads.png" alt="Ads AI">
-    <h2>Ads AI</h2>
-    <a href="/ads-ai">Ver más</a>
-  </div>
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/000000/small-business.png" alt="PYMES Express">
-    <h2>PYMES Express</h2>
-    <a href="/pymes-express">Ver más</a>
-  </div>
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/000000/rocket.png" alt="IA Boost">
-    <h2>IA Boost</h2>
-    <a href="/ia-boost">Ver más</a>
-  </div>
-</section>
+/* Sección de servicios */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
 
-<footer>
-  © 2025 Avanzia | Todos los derechos reservados
-</footer>
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
 
-</body>
-</html>
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card a {
+    color: #ff3c78;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.service-card a:hover {
+    color: #ff9a3c;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
